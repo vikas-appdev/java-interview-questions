@@ -1,4 +1,4 @@
-package com.gradlic.interviewquestions.multithreading;
+package com.gradlic.interviewquestions.concurrent;
 
 public class PrintNumberUsingMultipleThread {
     public static void main(String[] args) {

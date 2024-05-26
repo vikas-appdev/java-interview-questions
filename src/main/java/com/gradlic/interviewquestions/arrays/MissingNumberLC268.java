@@ -11,18 +11,15 @@ public class MissingNumberLC268 {
         int nums3[] = {9,6,4,2,3,5,7,0,1};
         System.out.println(missingNumber(nums1));
         System.out.println(missingNumber(nums2));
-        //System.out.println(missingNumber(nums3));
+        System.out.println(missingNumber(nums3));
     }
 
     public static int missingNumber(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for(int i=0; i<nums.length; i++){
             set.add(nums[i]);
-            System.out.print(nums[i]);
-
         }
-        System.out.println(set);
-        System.out.println(Arrays.toString(nums));
+
         for(int i=0; i<nums.length; i++){
             if(!set.contains(i)) return i;
         }
